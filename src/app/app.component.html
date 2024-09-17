@@ -1,0 +1,11 @@
+<app-header></app-header>
+<app-search-bar (search)="onSearch($event)"></app-search-bar>
+<app-book [books]="filteredBooks"></app-book>
+
+<div class="wrapper">
+    <router-outlet></router-outlet>
+</div>
+
+
+
+<app-footer></app-footer>

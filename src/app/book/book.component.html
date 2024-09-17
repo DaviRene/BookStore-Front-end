@@ -1,0 +1,29 @@
+<div class ="container">
+    <div class = "card">
+        <h3 class="text-center"> Books List</h3>
+        <div class = "card-body" *ngIf="books.length > 0; else noBooks">
+            <table class="table table-striped">
+                <thead>
+                    <th> Name </th>
+                    <th> Author </th>
+                    <th> Publisher </th>
+                    <th> ISBN </th>
+                    <th> Publish Date </th>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let book of books">
+                        <td> {{ book.name }}</td>
+                        <td> {{ book.author}}</td>
+                        <td> {{ book.publisher}}</td>
+                        <td> {{ book.isbn }}</td>
+                        <td> {{ book.publishDate}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<ng-template #noBooks>
+    <p>Nenhum livro encontrado.</p>
+</ng-template>
