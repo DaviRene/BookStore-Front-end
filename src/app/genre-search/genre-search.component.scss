@@ -1,0 +1,26 @@
+.lista-genero {
+    position: fixed;
+    left: 0px;
+    top: 80px;
+    display: flex;
+    flex-direction: column; 
+    gap: 0px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Remove marcadores da lista */
+}
+
+.list-group-item {
+    width: 140px;
+    background: rgb(126, 227, 185);
+    height: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin: 0;
+    padding: 0;
+}
