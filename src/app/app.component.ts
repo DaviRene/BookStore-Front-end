@@ -3,18 +3,16 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./layout/header/header.component";
 import { FooterComponent } from "./layout/footer/footer.component";
 import { BookComponent } from './book/book.component';
-import { SearchBarComponent } from './search-bar/search-bar.component';
-import { Input } from '@angular/core';
-import { Book } from './Book';
 import { BookService } from './services/Book.service';
 import { SearchService } from './services/search.service';
+import { GenreSearchComponent } from "./genre-search/genre-search.component";
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent,BookComponent,SearchBarComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, BookComponent, GenreSearchComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

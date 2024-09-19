@@ -1,3 +1,9 @@
 <header class="wrapper row full-center">
-    <img src="https://files.oaiusercontent.com/file-mMZzw8exkLAv1v1swQphtxSs?se=2024-09-17T19%3A32%3A57Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Da7dce88e-b92c-48dc-98cf-d42865ff5c78.webp&sig=QCI7puP79rjib8tPLyFB2JPAUQCoahZdaLc7ipZwCuw%3D" alt="Logo image" class="logo">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">BookStore</a>
+            <input class="form-control me-2" [(ngModel)]="searchTerm" type="search" placeholder="Insira o nome do livro..." >
+            <button class="btn btn-outline-success" (click)="onSearchClick()">Search</button>
+        </div>
+      </nav>
 </header>
