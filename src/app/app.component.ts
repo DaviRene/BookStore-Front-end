@@ -56,4 +56,8 @@ export class AppComponent {
     }
   }
   
+  updateBooks(genreSearchComponent: any[]): void {
+    this.filteredBooks = genreSearchComponent;  // Atualiza a lista de livros com os dados recebidos
+  }
+  
 }

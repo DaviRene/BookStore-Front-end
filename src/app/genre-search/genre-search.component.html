@@ -1,5 +1,7 @@
 <div class="lista-genero" *ngIf="genres.length > 0">
     <ul *ngFor="let genre of genres" >
-        <li class="list-group-item">{{genre}}</li>
+        <li class="list-group-item" (click)="fetchBooksByGenre(genre)">
+            {{genre}}
+        </li>
     </ul>
 </div>

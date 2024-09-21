@@ -1,6 +1,6 @@
 <app-header (search)="onSearch($event)"></app-header>
 <app-book [books]="filteredBooks"></app-book>
-<app-genre-search></app-genre-search>
+<app-genre-search (booksFound)="updateBooks($event)"></app-genre-search>
 
 <div class="wrapper">
     <router-outlet></router-outlet>
